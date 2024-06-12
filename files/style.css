@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: playfair display;
+    scroll-behavior: smooth;
+    font-weight: 900;
+    transition: all 0.25s ease;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.75);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    background: linear-gradient(167deg, rgba(110, 86, 215, 0.8498), rgba(49, 188, 117, 0.7544));
+    height: 100vh;
+    /* background: #cecece; */
+    display: grid;
+    place-items: center;
+}
+
+#gradient-generator {
+    background: #ffffff;
+    height: 550px;
+    width: 550px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.75);
+}
+
+#heading {
+    font-weight: 900;
+    font-size: 2.3em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#element {
+    background: linear-gradient(167deg, rgba(110, 86, 215, 0.8498), rgba(49, 188, 117, 0.7544));
+    height: 250px;
+    width: 500px;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.75);
+}
+
+#details {
+    box-sizing: border-box;
+    background: #cecece;
+    padding: 10px;
+    width: 500px;
+    height: 66px;
+    margin: 15px 0;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.75);
+}
+
+#generate {
+    border: none;
+    font-size: 1.2em;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 500px;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+#generate:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+@media only screen and (max-width:600px) {
+    #gradient-generator {
+        width: 520px;
+    }
+    #details{
+        height: 66px;
+    }
+    #element,#details,#generate{
+        width: 460px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #gradient-generator{
+        width: 420px;
+    }
+    #element,#details,#generate{
+        width: 360px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    #gradient-generator {
+        width: 320px;
+    }
+    #details{
+        height: 87px;
+    }
+    #element,#details,#generate{
+        width: 280px;
+    }
+}
