@@ -44,6 +44,17 @@ let createDivs = (len) => {
     generate.onclick = () => {
         gradients.innerHTML = "";
         gradients.appendChild(newDiv());
+        copyText();
     };
 };
+let copyText = () => {
+    let details = document.getElementById("details");
+    details.addEventListener('click', () => {
+        let value = details.innerText;
+        console.log(value);
+        navigator.clipboard.writeText(value);
+        alert("Copied the text: " + value);
+    })
+}
+copyText();
 createDivs();
